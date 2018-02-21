@@ -7,3 +7,9 @@
 /Debug/
 Lab1
 *.txt
+
+Lab1_Report/Report\.aux
+
+Lab1_Report/Report\.log
+
+Lab1_Report/Report\.synctex\.gz
