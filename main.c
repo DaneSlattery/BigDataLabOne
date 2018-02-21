@@ -6,27 +6,29 @@
  */
 
 #include <stdio.h>
+#include <math.h>
 #include "CreateArray.h"
 #include "getElement.h"
+#include "printArray.h"
+#include "setZero.h"
+#include "TenPercentOnes.h"
 int main()
 {
-	size_t Bounds[2] = {3, 3};
+	printf("Create Array\n");
+	size_t Bounds[2] = {13,11};
 	int *Array = CreateArray(2, Bounds);
-	// printf("%d\n", );
-	for (int n = 0; n<Bounds[0]*Bounds[1];n++)
-	{
-		printf("%d ", Array[n]);
-		if ((n+1)%Bounds[0] == 0)
-			printf("\n");
-	}
-	printf("\nChange element (1,2) to 79\n");
-	*getElement(Array,2,Bounds,(size_t []) {1, 2}) = 79;
-	printf("%d\n", *getElement(Array,2,Bounds,(size_t []) {1, 2}));
+	printArray(Array, Bounds);
 
-	for (int n = 0; n<Bounds[0]*Bounds[1];n++)
-	{
-		printf("%d ", Array[n]);
-		if ((n+1)%Bounds[0] == 0)
-			printf("\n");
-	}
+	printf("Change element (1,2) to 5\n");
+	*getElement(Array,2,Bounds,(size_t []) {1, 2}) = 5;
+	printf("element (1,2)  is now %d\n\n", *getElement(Array,2,Bounds,(size_t []) {1, 2}));
+	printArray(Array, Bounds);
+
+	printf("Set all to 0's \n");
+	setZero(Array,2,Bounds);
+	printArray(Array, Bounds);
+
+	printf("Set 10 percent to 1's \n");
+	TenPercentOnes(Array,2,Bounds);
+	printArray(Array, Bounds);
 }

@@ -19,7 +19,7 @@ int* CreateArray(size_t K, size_t bounds[])
 	}
 
 	//
-	printf("Size: (%zu).\n", size);
+	printf("Memory size: %zu\n", size);
 	//
 	return (malloc(size));
 }

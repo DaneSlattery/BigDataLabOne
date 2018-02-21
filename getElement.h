@@ -18,7 +18,7 @@ int* getElement(int* Array, size_t K, size_t Bounds[], size_t Indices[])
   int index = Indices[0];
   for (size_t n = 1; n < K; ++n)
   {
-    index = index * Bounds[n] + Indices[n];
+    index = index * Bounds[n-1] + Indices[n];
   }
   // printf("%d\n", index);
   return &Array[index];
