@@ -7,7 +7,7 @@
 
 #ifndef CREATEARRAY_H_
 #define CREATEARRAY_H_
-
+#include <stdio.h>
 #include <stdlib.h>
 
 int* CreateArray(size_t K, size_t bounds[])
@@ -19,7 +19,7 @@ int* CreateArray(size_t K, size_t bounds[])
 	}
 
 	//
-	printf("Size: (%d).\n", size);
+	printf("Size: (%zu).\n", size);
 	//
 	return (malloc(size));
 }
