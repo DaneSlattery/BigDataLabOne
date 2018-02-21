@@ -10,8 +10,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* CreateArray(size_t K, size_t bounds[])
+int* CreateArray(size_t bounds[])
 {
+	size_t K = sizeof(&bounds)/sizeof(size_t);
 	size_t size = sizeof(int);
 	for (size_t n = 0; n < K; ++n)
 	{

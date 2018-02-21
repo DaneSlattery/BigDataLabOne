@@ -10,8 +10,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* getElement(int* Array, size_t K, size_t Bounds[], size_t Indices[])
+int* getElement(int* Array, size_t K,size_t Bounds[], size_t Indices[])
 {
+
   if (K==0)
     return Array;
 
