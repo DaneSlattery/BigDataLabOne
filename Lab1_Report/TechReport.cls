@@ -73,10 +73,6 @@
 \if@compatibility\else
 \DeclareOption{final}{\setlength\overfullrule{0pt}}
 \fi
-\if@compatibility\else
-\DeclareOption{onecolumn}{\@twocolumnfalse}
-\fi
-\DeclareOption{twocolumn}{\@twocolumntrue}
 \DeclareOption{leqno}{\input{leqno.clo}}
 \DeclareOption{fleqn}{\input{fleqn.clo}}
 \DeclareOption{openbib}{%
