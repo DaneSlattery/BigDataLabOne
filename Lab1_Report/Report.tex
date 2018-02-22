@@ -1,17 +1,154 @@
-\documentclass[]{article}
+\documentclass{TechReport}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lipsum}  
+\usepackage{amsmath}
+\usepackage{url}
+\urlstyle{rm}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{listings}
+\lstdefinestyle{nonumbers}
+{numbers=none}
+\usepackage{pdfpages}
 
-%opening
-\title{try}
-\author{me}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+
+
+%if you have installed and are using Windows' Times New Roman font, uncomment the following:
+%\renewcommand{\encodingdefault}{T1}
+%\renewcommand{\rmdefault}{tnr}
+
+\newenvironment{packeditemize}%
+{\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}%
+{\end{itemize}}
+
+\setstretch{0.9} 
+
 
 \begin{document}
+%
+\title{Basic Latex Template}
+%
+\author{Timothy McBride (732037) \hspace{1.5em} Nabeel Vandayar (704528) \hspace{1.5em} Dane Slattery 789132\\  
+\\	
+\emph{University of the Witwatersrand, School of Electrical and Information Engineering,\\ Private Bag 3, 2050,
+	Johannesburg, South Africa
+                                                              }}
 
+\abstract{The abstract}
+
+\keywords{keywords}
+%
 \maketitle
+%
+% ----------------------------------------------------------------
+\section{Introduction}
+\label{sec:Introduction}
 
-\begin{abstract}documentdocument
-afvsdv
-\end{abstract}
+%\begin{figure}[h]
+%	\includegraphics[width=0.9\columnwidth]{"Figures/Nabeel_Vandayar.png"} %L B R T
+%	\caption{System block diagram.}
+%	\label{fig:system}
+%\end{figure}
 
-\section{ghj}
-fvdzvdz
+\subsection{Context in Society}
+\label{sec:Context}
+
+Report structure
+
+\section{Background}
+\label{sec:Background}
+
+\subsection{Design Considerations}
+\label{sec:Considerations}
+Requirements
+
+Assumptions
+
+Constraints
+
+Success criteria
+
+\subsection{Literature Survey}
+\label{sec:LitSurvey}
+
+
+
+
+\subsection{Physical characteristics}
+\label{sec:Physics}
+Pros and cons
+
+\section{System Design}
+\label{sec:Design}
+
+Overview
+Focus on design process and developments
+
+\subsection{System Measurement and Control}
+\label{sec:Control}
+
+
+\subsection{Circuit design}
+\label{sec:Circuit}
+
+
+\section{Results}
+
+\subsection{Testing}
+\label{sec:Testing}
+
+
+\subsection{Analysis}
+\label{sec:Analysis}
+
+\subsection{Future Recommendations}
+\label{sec:Future}
+
+
+\section{Conclusion}
+\label{sec:Conclusion}
+
+
+% References
+\begin{thebibliography}{99}	
+%	include data sheets
+\bibitem{ref:Nabs}
+ N Vandayar, "A Latex Report template," School of Electrical and Information Engineering, University of the Witwatersrand, 2017.
+
+
+	 
+\end{thebibliography}
+
+\appendix
+\section{Equations}
+\label{app:equations}
+
+\section{Circuits}
+\label{app:Circuits}
+
+\subsection{Circuit Diagrams}
+
+\subsection{Circuit Simulations}
+
+\section{Component Costs}
+\label{app:costs}
+
+\section{Project Management}
+\subsection{Work Division}
+\subsection{Time Management}
+
+
+
+
 \end{document}
+% ----------------------------------------------------------------
