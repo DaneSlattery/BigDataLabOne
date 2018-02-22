@@ -4,25 +4,25 @@
  *  Created on: 20 Feb 2018
  *      Author: dane
  */
+#include "Lab1.h"
 
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-#include <math.h>
-#include "CreateArray.h"
-#include "getElement.h"
-#include "printArray.h"
-#include "setZero.h"
-#include "TenPercentOnes.h"
-#include "ChooseFivePercent.h"
 int main()
 {
-	size_t Bounds[5] = {10,10,10,10,10};
-	size_t K = sizeof(Bounds)/sizeof(size_t);
-	int *Array = CreateArray(K, Bounds);
-	setZero(Array,K,Bounds);
-	TenPercentOnes(Array,K,Bounds);
-	ChooseFivePercent(Array,K,Bounds);
-	free(Array);
+	size_t Bounds1[2] = {100,100};
+	// size_t K = sizeof(Bounds)/sizeof(size_t);
+	Lab1(2, Bounds1);
+
+	size_t Bounds2[3] = {100,100,100};
+	Lab1(3, Bounds2);
+
+	size_t Bounds3[4] = {50,50,50,50};
+	Lab1(4, Bounds3);
+
+	size_t Bounds4[5] = {20,20,20,20,20};
+	Lab1(5, Bounds4);
 	return 0;
 }
+// A[100][100],
+// A[100][100][100],
+// A[50][50][50][50]
+// A[20][20][20][20][20]

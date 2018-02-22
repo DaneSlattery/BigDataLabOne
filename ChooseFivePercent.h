@@ -11,10 +11,10 @@
 void ChooseFivePercent(int* Array, size_t K, size_t Bounds[])
 {
   int elements = NumElements(K,Bounds);
-  printf("Num Elements: %d\n", elements);
+  // printf("Num Elements: %d\n", elements);
   int band = roundf(elements/20.0f);
   int space = ceil(elements/(float)band);
-  printf("Band size: %d\n", band);
+  // printf("Band size: %d\n", band);
 
   srand(time(NULL));   // should only be called once
   int R, index;
