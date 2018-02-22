@@ -24,9 +24,9 @@ int main()
 	int *Array = CreateArray(Bounds);
 	printArray(Array, Bounds);
 
-	printf("Change element (1,2) to 5\n");
-	*getElement(Array,Dims,Bounds,(size_t []) {1, 2}) = 5;
-	printf("element (1,2)  is now %d\n\n", *getElement(Array,Dims,Bounds,(size_t []) {1, 2}));
+	printf("Change element (5,5) to 5\n");
+	*getElement(Array,Dims,Bounds,(size_t []) {5,5}) = 5;
+	printf("element (5,5)  is now %d\n\n", *getElement(Array,Dims,Bounds,(size_t []) {5,5}));
 	printArray(Array, Bounds);
 
 	printf("Set all to 0's \n");
