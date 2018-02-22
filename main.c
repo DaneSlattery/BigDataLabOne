@@ -9,7 +9,6 @@
 int main()
 {
 	size_t Bounds1[2] = {100,100};
-	// size_t K = sizeof(Bounds)/sizeof(size_t);
 	Lab1(2, Bounds1);
 
 	size_t Bounds2[3] = {100,100,100};
@@ -22,7 +21,3 @@ int main()
 	Lab1(5, Bounds4);
 	return 0;
 }
-// A[100][100],
-// A[100][100][100],
-// A[50][50][50][50]
-// A[20][20][20][20][20]
