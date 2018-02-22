@@ -1,2 +1,0 @@
-# BigDataLabOne
-Data
