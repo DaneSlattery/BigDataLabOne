@@ -14,7 +14,7 @@ the elements and the value of the array element at the chosen cell.
 
 Some timing data:
 
-the 20*20*20*20*20 array takes 16s.
-50*50*50*50 takes 26s.
-100*100*100 takes 3s.
-100*100 is in the ms.
+the 20x20x20x20x20 array takes 16s.
+50x50x50x50 takes 26s.
+100x100x100 takes 3s.
+100x100 is in the ms.
