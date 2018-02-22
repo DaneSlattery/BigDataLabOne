@@ -15,3 +15,7 @@ Lab1_Report/Report\.synctex\.gz
 Lab1_Report/Report\.log
 
 Lab1_Report/Report\.aux
+
+*.exe
+
+BigData_Lab1/
