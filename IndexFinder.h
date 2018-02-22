@@ -3,10 +3,10 @@
 
 int IndexFinder(size_t currentD, size_t K, size_t Bounds[], size_t Indices[])
 {
-	if (Bounds[currentD] < K)
-		return Indices[currentD] + Bounds[currentD]  * (IndexFinder(currentD+1, K, Bounds, Indices));
+	if (currentD < K)
+		return Indices[currentD-1] + Bounds[currentD-1]  * (IndexFinder(currentD+1, K, Bounds, Indices));
 	else
-		return Indices[currentD];
+		return Indices[currentD-1];
 }
 
 #endif

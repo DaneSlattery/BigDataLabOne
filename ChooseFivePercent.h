@@ -18,13 +18,14 @@ void ChooseFivePercent(int* Array, size_t K, size_t Bounds[])
 
   srand(time(NULL));   // should only be called once
   int R, index;
+  printf("Value\tCoordinates\n");
   for (int n = 0; n < band;n++)
   {
     R = rand()%space;      // returns a pseudo-random integer between 0 and RAND_MAX
     index = n*space+R;
     // Array[index] =  4;
-    printf("Value: %d\n", Array[index]);
-    printf("Coordinates (");
+    printf("%d\t", Array[index]);
+    printf("(");
     for (int i = 0; i < K; i++)
     {
       printf("%zu",index%Bounds[i]);

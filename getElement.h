@@ -22,6 +22,7 @@ int* getElement(int* Array, size_t K,size_t Bounds[], size_t Indices[])
   // {
   //   index = index * Bounds[n-1] + Indices[n];
   // }
+
   int index = IndexFinder(1,K,Bounds,Indices);
 
   return &Array[index];
