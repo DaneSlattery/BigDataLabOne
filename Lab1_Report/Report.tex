@@ -61,6 +61,23 @@ This main focus for this laboratory was to create a methodology to perform opera
 \end{enumerate} 
 Additionally a main program is written to create four arrays, the procedures that are developed are run on each of these arrays.
  
+ \section{Threading comparison}
+ POSIX Threads
+
+    Specified by the IEEE POSIX 1003.1c standard (1995). C Language only.
+    Part of Unix/Linux operating systems
+    Library based
+    Commonly referred to as Pthreads.
+    Very explicit parallelism; requires significant programmer attention to detail. 
+
+OpenMP
+
+    Industry standard, jointly defined and endorsed by a group of major computer hardware and software vendors, organizations and 	individuals.
+    Compiler directive based
+    Portable / multi-platform, including Unix and Windows platforms
+    Available in C/C++ and Fortran implementations
+    Can be very easy and simple to use - provides for "incremental parallelism". Can begin with serial code. 
+ 
 \section{Problem Solution}
 This problem was solved by operating on a one dimensional array which is mathematically manipulated to act as a multidimensional array.  The array is created by allocating the equivalent memory required for the two dimensional array. The procedures are designed to take the one dimensional array as input and operate on it accordingly. 
 
